@@ -11,6 +11,13 @@ enum MyEnum {
     Two
 }
 
+enum MyEnum2 {
+    //% block="P0"
+    P0 = AnalogPin.P0,
+    //% block="P1"
+    P1 = AnalogPin.P1
+}
+
 /**
  * mbe blocks
  */
@@ -26,6 +33,15 @@ namespace mbe2 {
     export function foo(n: number, s: string, e: MyEnum): void {
         // Add code here
         basic.showString("Hello mbe!")
+    }
+
+    /**
+     * test by me
+     * @param e describe parameter here
+     */
+    //% block
+    export function foo2(e: MyEnum2): void {
+        // Add code here
     }
 
     /**
