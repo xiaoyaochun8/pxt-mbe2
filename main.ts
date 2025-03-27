@@ -42,6 +42,7 @@ namespace mbe2 {
     //% block
     export function foo2(e: MyEnum2): void {
         // Add code here
+        basic.showString("Hello mbe foo2!")
     }
 
     /**
