@@ -53,4 +53,13 @@ namespace mbe2 {
     export function fib(value: number): number {
         return value <= 1 ? value : fib(value - 1) + fib(value - 2);
     }
+
+    /**
+     * 270度舵机角度
+     * @param value describe value here, eg: 5
+     */
+    //% block
+    export function arc270(value: number): number {
+        return Math.map(value, 0, 270, 0, 180);
+    }
 }
