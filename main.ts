@@ -73,7 +73,7 @@ namespace mbe2 {
 
     /**
      * range
-     * @param e describe parameter here
+     * @param x describe parameter here
      */
     //% block
     //% group='testInput'
@@ -84,14 +84,37 @@ namespace mbe2 {
     }
 
     /**
-     * range
-     * @param e describe parameter here
+     * color
+     * @param color describe parameter here
      */
     //% block
     //% group='testInput'
     //% color.shadow="colorNumberPicker"
     export function showColor(color: number) {
         basic.showString(color.toString())
+    }
+
+    /**
+     * color
+     * @param color describe parameter here
+     */
+    //% shim=TD_ID
+    //% blockId=wordPicker
+    //% block="$word"
+    //% group='testInput'
+    //% blockHidden=true
+    //% word.fieldEditor="textdropdown"
+    //% word.fieldOptions.decompileLiterals=true
+    //% word.fieldOptions.values='hi,hello'
+    //% word.defl='hello'
+    export function __wordPicker(word: string): string {
+        return word;
+    }
+    //% block="say textdropdown $word"
+    //% group='testInput'
+    //% word.shadow="wordPicker"
+    export function testdropdown(word: string) {
+
     }
 
 }
