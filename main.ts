@@ -31,10 +31,10 @@ namespace mbe2 {
      */
     //% block
     //% group='servo'
-    //% block.loc.cn='270度舵机 $value'
+    //% block.loc.cn='270度舵机 $v'
     //% v.min=0 v.max=270 v.defl=0
-    export function arc270(value: number): number {
-        return Math.map(value, 0, 270, 0, 180);
+    export function arc270(v: number): number {
+        return Math.map(v, 0, 270, 0, 180);
     }
     
     /**
