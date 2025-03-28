@@ -114,7 +114,6 @@ namespace mbe2 {
     //% group='testInput'
     //% word.shadow="wordPicker"
     export function testdropdown(word: string) {
-
     }
 
     //% block
@@ -123,7 +122,6 @@ namespace mbe2 {
     //% gesture.fieldOptions.width=220
     //% gesture.fieldOptions.columns=3
     export function onGesture(gesture: Gesture) {
-
     }
 
     /**
@@ -175,6 +173,46 @@ namespace mbe2 {
     //% yes.shadow="toggleYesNo"
     export function yesNo(yes: boolean): boolean {
         return yes;
+    }
+
+    /**
+     * Play a tone
+     * @param note pitch of the tone to play in Hertz (Hz)
+     */
+    //% blockId=music_play_note
+    //% block="play tone $note"
+    //% group='testInput'
+    //% note.shadow="device_note"
+    //% note.defl=Note.C
+    export function playTone(note: number) {
+    }
+
+    /**
+     * Turns by an angle between 0 and 180
+     */
+    //% block="turn $angle"
+    //% group='testInput'
+    //% angle.shadow="protractorPicker"
+    export function turn(angle: number) {
+    }
+
+    /**
+     * Runs the motor at the given speed
+     */
+    //% block="crickit run at $speed \\%"
+    //% group='testInput'
+    //% speed.shadow="speedPicker"
+    export function run(speed: number) {
+    }
+
+    /**
+     * Steers two motors by the given ratio
+     */
+    //% block="steer $turnRatio"
+    //% group='testInput'
+    //% turnRatio.min=-200 turnRatio.max=200
+    //% turnRatio.shadow=turnRatioPicker
+    export function steer(turnRatio: number) {
     }
 
 }
