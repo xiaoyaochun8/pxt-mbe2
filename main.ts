@@ -22,7 +22,7 @@ enum MyEnum2 {
  * mbe blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-//% groups=['servo','others']
+//% groups=['servo','testInput','others']
 namespace mbe2 {
 
     /**
@@ -69,6 +69,29 @@ namespace mbe2 {
     //% group='others'
     export function fib(value: number): number {
         return value <= 1 ? value : fib(value - 1) + fib(value - 2);
+    }
+
+    /**
+     * range
+     * @param e describe parameter here
+     */
+    //% block
+    //% group='testInput'
+    //% x.min=-100 x.max=100
+    export function range(x: number): void {
+        // Add code here
+        basic.showString(x.toString())
+    }
+
+    /**
+     * range
+     * @param e describe parameter here
+     */
+    //% block
+    //% group='testInput'
+    //% color.shadow="colorNumberPicker"
+    export function showColor(color: number) {
+        basic.showString(color.toString())
     }
 
 }
