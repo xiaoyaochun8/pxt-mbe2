@@ -117,4 +117,64 @@ namespace mbe2 {
 
     }
 
+    //% block
+    //% group='testInput'
+    //% gesture.fieldEditor="gridpicker"
+    //% gesture.fieldOptions.width=220
+    //% gesture.fieldOptions.columns=3
+    export function onGesture(gesture: Gesture) {
+
+    }
+
+    /**
+     * Render a boolean as a down/up toggle
+     */
+    //% block="$down"
+    //% group='testInput'
+    //% down.shadow="toggleDownUp"
+    export function downUp(down: boolean): boolean {
+        return down;
+    }
+
+    /**
+     * Render a boolean as an up/down toggle
+     */
+    //% block="$up"
+    //% group='testInput'
+    //% up.shadow="toggleUpDown"
+    export function upDown(up: boolean): boolean {
+        return up;
+    }
+
+    /**
+     * Render a boolean as a high/low toggle
+     */
+    //% block="$high"
+    //% group='testInput'
+    //% high.shadow="toggleHighLow"
+    export function highLow(high: boolean): boolean {
+        return high;
+    }
+
+
+    /**
+     * Render a boolean as a on/off toggle
+     */
+    //% block="$on"
+    //% group='testInput'
+    //% on.shadow="toggleOnOff"
+    export function onOff(on: boolean): boolean {
+        return on;
+    }
+
+    /**
+     * Render a boolean as a yes/no toggle
+     */
+    //% block="$yes"
+    //% group='testInput'
+    //% yes.shadow="toggleYesNo"
+    export function yesNo(yes: boolean): boolean {
+        return yes;
+    }
+
 }
