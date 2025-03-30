@@ -29,7 +29,7 @@ namespace mbe2 {
      * 270度舵机角度
      * @param value describe value here, eg: 5
      */
-    //% block
+    //% block='270度：设置舵机角度 $v'
     //% group='servo'
     //% block.loc.cn='270度舵机 $v'
     //% v.min=0 v.max=270 v.defl=0
