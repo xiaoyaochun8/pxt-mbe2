@@ -92,6 +92,7 @@ namespace mbe2 {
     //% color.shadow="colorNumberPicker"
     export function showColor(color: number) {
         basic.showString(color.toString())
+        serial.writeLine(color.toString())
     }
 
     /**
