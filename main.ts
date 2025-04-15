@@ -18,7 +18,8 @@ enum MyEnum2 {
     P1 = AnalogPin.P1
 }
 
-enum MyPos {
+//128x64
+enum MyOledPos {
     a1=1,
     a2=2,
     a3=3,
@@ -136,10 +137,10 @@ namespace mbe2 {
 
     //% block
     //% group='testInput'
-    //% myPos.fieldEditor="gridpicker"
-    //% myPos.fieldOptions.width=520
-    //% myPos.fieldOptions.columns=3
-    export function getPos(myPos: MyPos) {
+    //% myOledPos.fieldEditor="gridpicker"
+    //% myOledPos.fieldOptions.width=520
+    //% myOledPos.fieldOptions.columns=10
+    export function getPos(myOledPos: MyOledPos) {
     }
 
     /**
