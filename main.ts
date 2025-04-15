@@ -18,6 +18,15 @@ enum MyEnum2 {
     P1 = AnalogPin.P1
 }
 
+enum MyPos {
+    a1=1,
+    a2=2,
+    a3=3,
+    a4=4,
+    a5=5,
+    a6=6
+}
+
 /**
  * mbe blocks
  */
@@ -120,9 +129,17 @@ namespace mbe2 {
     //% block
     //% group='testInput'
     //% gesture.fieldEditor="gridpicker"
-    //% gesture.fieldOptions.width=220
+    //% gesture.fieldOptions.width=520
     //% gesture.fieldOptions.columns=3
     export function onGesture(gesture: Gesture) {
+    }
+
+    //% block
+    //% group='testInput'
+    //% myPos.fieldEditor="gridpicker"
+    //% myPos.fieldOptions.width=520
+    //% myPos.fieldOptions.columns=3
+    export function getPos(myPos: MyPos) {
     }
 
     /**
