@@ -143,6 +143,26 @@ namespace mbe2 {
     export function getPos(myOledPos: MyOledPos) {
     }
 
+    //% block
+    //% group='testInput'
+    export function getPos2(myOledPos: Image) {
+    }
+
+    /**
+   * Create a 5x8 pixel matrix for use as a custom character.
+   */
+    //% subcategory="LCD"
+    //% block="character"
+    //% imageLiteral=1
+    //% imageLiteralColumns=128
+    //% imageLiteralRows=64
+    //% imageLiteralScale=0.3
+    //% shim=images::createImage
+    //% weight=59
+    export function oledCharacterPixels(i: string): Image {
+        return <Image><any>i;
+    }
+
     /**
      * Render a boolean as a down/up toggle
      */
