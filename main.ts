@@ -154,9 +154,9 @@ namespace mbe2 {
     //% subcategory="LCD"
     //% block="character"
     //% imageLiteral=1
-    //% imageLiteralColumns=128
-    //% imageLiteralRows=64
-    //% imageLiteralScale=0.3
+    //% imageLiteralColumns=19
+    //% imageLiteralRows=19
+    //% imageLiteralScale=0.001
     //% shim=images::createImage
     //% weight=59
     export function oledCharacterPixels(i: string): Image {
