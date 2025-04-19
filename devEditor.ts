@@ -19,10 +19,4 @@ namespace devEditor{
     export function onGesture(gesture: Gesture) {
     }
 
-    //% block
-    //% myOledPos.fieldEditor="gridpicker"
-    //% myOledPos.fieldOptions.width=520
-    //% myOledPos.fieldOptions.columns=10
-    export function getPos(myOledPos: MyOledPos) {
-    }
 }

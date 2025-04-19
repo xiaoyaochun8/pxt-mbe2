@@ -11,23 +11,6 @@ enum MyEnum {
     Two
 }
 
-enum MyEnum2 {
-    //% block="P0"
-    P0 = AnalogPin.P0,
-    //% block="P1"
-    P1 = AnalogPin.P1
-}
-
-//128x64
-enum MyOledPos {
-    a1=1,
-    a2=2,
-    a3=3,
-    a4=4,
-    a5=5,
-    a6=6
-}
-
 /**
  * mbe blocks
  */
@@ -61,17 +44,6 @@ namespace mbe2 {
     }
 
     /**
-     * test by me
-     * @param e describe parameter here
-     */
-    //% block
-    //% group='others'
-    export function foo2(e: MyEnum2): void {
-        // Add code here
-        basic.showString("Hello mbe foo2!")
-    }
-
-    /**
      * TODO: describe your function here
      * @param value describe value here, eg: 5
      */
@@ -79,13 +51,6 @@ namespace mbe2 {
     //% group='others'
     export function fib(value: number): number {
         return value <= 1 ? value : fib(value - 1) + fib(value - 2);
-    }
-
-
-
-    //% block
-    //% group='testInput'
-    export function getPos2(myOledPos: Image) {
     }
 
 }

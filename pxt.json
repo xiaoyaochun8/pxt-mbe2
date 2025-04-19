@@ -15,7 +15,8 @@
         "devEditor.ts",
         "devShadow.ts",
         "devMore.ts",
-        "devToggle.ts"
+        "devToggle.ts",
+        "devVarType.ts"
     ],
     "testFiles": [
         "test.ts"
