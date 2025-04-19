@@ -3,7 +3,7 @@ namespace mydev{
     /**
    * Create a 5x8 pixel matrix for use as a custom character.
    */
-    //% subcategory="LCD"
+    //% subcategory="oled"
     //% block="character"
     //% imageLiteral=1
     //% imageLiteralColumns=19
