@@ -4,6 +4,9 @@ namespace devVarType{
     export function devImage(myOledPos: Image) {
     }
     //% block
+    export function devEvent(handler: () => void) {
+    }
+    //% block
     export function devArray(ary: string[]) {
     }
     //% block
