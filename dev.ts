@@ -1,8 +1,8 @@
 // 在此处添加您的代码
 namespace mydev{
     /**
-   * Create a 5x8 pixel matrix for use as a custom character.
-   */
+     * Create a 5x8 pixel matrix for use as a custom character.
+     */
     //% subcategory="oled"
     //% block="character"
     //% imageLiteral=1
