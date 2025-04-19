@@ -14,8 +14,8 @@ namespace devMore {
      * @param s describe parameter here, eg: "Hello"
      * @param e describe parameter here
      */
-    //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
+    //% block="base $n $s"
+    export function foo(n: number, s: string): void {
         // Add code here
     }
 
@@ -23,7 +23,7 @@ namespace devMore {
      * TODO: describe your function here
      * @param value describe value here, eg: 5
      */
-    //% block
+    //% block="devAdvanced $value"
     //% advanced=true
     export function devAdvanced(value: number): number {
         return 1;

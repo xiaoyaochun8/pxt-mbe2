@@ -47,6 +47,18 @@ namespace devShadow{
         serial.writeLine(color.toString())
     }
 
+    //% block="colorWheelPicker $color"
+    //% color.shadow="colorWheelPicker"
+    export function showColorWheel(color: number) {
+
+    }
+
+    //% block="colorWheelHsvPicker $color"
+    //% color.shadow="colorWheelHsvPicker"
+    export function showColorWheelHsv(color: number) {
+
+    }
+
     /**
      * color
      * @param color describe parameter here

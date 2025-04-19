@@ -12,10 +12,10 @@
         "main.ts",
         "main.py",
         "dev.ts",
-        "devBool.ts",
         "devEditor.ts",
         "devShadow.ts",
-        "devMore.ts"
+        "devMore.ts",
+        "devToggle.ts"
     ],
     "testFiles": [
         "test.ts"

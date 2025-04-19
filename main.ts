@@ -81,17 +81,7 @@ namespace mbe2 {
         return value <= 1 ? value : fib(value - 1) + fib(value - 2);
     }
 
-    /**
-     * range
-     * @param x describe parameter here
-     */
-    //% block
-    //% group='testInput'
-    //% x.min=-100 x.max=100
-    export function range(x: number): void {
-        // Add code here
-        basic.showString(x.toString())
-    }
+
 
     //% block
     //% group='testInput'
