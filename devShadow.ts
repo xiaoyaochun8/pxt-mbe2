@@ -5,7 +5,7 @@ namespace devShadow{
      * @param note pitch of the tone to play in Hertz (Hz)
      */
     //% blockId=music_play_note
-    //% block="play tone $note"
+    //% block="device_note $note"
     //% note.shadow="device_note"
     //% note.defl=Note.C
     export function playTone(note: number) {
@@ -14,7 +14,7 @@ namespace devShadow{
     /**
      * Turns by an angle between 0 and 180
      */
-    //% block="turn $angle"
+    //% block="protractorPicker $angle"
     //% angle.shadow="protractorPicker"
     export function turn(angle: number) {
     }
@@ -22,7 +22,7 @@ namespace devShadow{
     /**
      * Runs the motor at the given speed
      */
-    //% block="crickit run at $speed \\%"
+    //% block="speedPicker $speed \\%"
     //% speed.shadow="speedPicker"
     export function run(speed: number) {
     }
@@ -30,25 +30,40 @@ namespace devShadow{
     /**
      * Steers two motors by the given ratio
      */
-    //% block="steer $turnRatio"
+    //% block="turnRatioPicker $turnRatio"
     //% turnRatio.min=-200 turnRatio.max=200
     //% turnRatio.shadow=turnRatioPicker
     export function steer(turnRatio: number) {
-    }
-
-    //% block="say textdropdown $word"
-    //% word.shadow="wordPicker"
-    export function testdropdown(word: string) {
     }
 
     /**
      * color
      * @param color describe parameter here
      */
-    //% block
+    //% block="colorNumberPicker $color"
     //% color.shadow="colorNumberPicker"
     export function showColor(color: number) {
         basic.showString(color.toString())
         serial.writeLine(color.toString())
+    }
+
+    /**
+     * color
+     * @param color describe parameter here
+     */
+    //% shim=TD_ID
+    //% blockId=wordPicker
+    //% block="$word"
+    //% blockHidden=true
+    //% word.fieldEditor="textdropdown"
+    //% word.fieldOptions.decompileLiterals=true
+    //% word.fieldOptions.values='hi,hello'
+    //% word.defl='hello'
+    export function __wordPicker(word: string): string {
+        return word;
+    }
+    //% block="wordPicker $word"
+    //% word.shadow="wordPicker"
+    export function testdropdown(word: string) {
     }
 }

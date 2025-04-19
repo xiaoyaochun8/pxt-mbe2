@@ -11,11 +11,11 @@
         "README.md",
         "main.ts",
         "main.py",
-        "more.ts",
         "dev.ts",
         "devBool.ts",
         "devEditor.ts",
-        "devShadow.ts"
+        "devShadow.ts",
+        "devMore.ts"
     ],
     "testFiles": [
         "test.ts"
