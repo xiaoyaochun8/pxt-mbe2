@@ -43,20 +43,16 @@ namespace devShadow{
     //% block="colorNumberPicker $color"
     //% color.shadow="colorNumberPicker"
     export function showColor(color: number) {
-        basic.showString(color.toString())
-        serial.writeLine(color.toString())
     }
 
     //% block="colorWheelPicker $color"
     //% color.shadow="colorWheelPicker"
     export function showColorWheel(color: number) {
-
     }
 
     //% block="colorWheelHsvPicker $color"
     //% color.shadow="colorWheelHsvPicker"
     export function showColorWheelHsv(color: number) {
-
     }
 
     /**
