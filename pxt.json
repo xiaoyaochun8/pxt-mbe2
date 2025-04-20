@@ -16,7 +16,8 @@
         "devShadow.ts",
         "devMore.ts",
         "devToggle.ts",
-        "devVarType.ts"
+        "devVarType.ts",
+        "mqlib.ts"
     ],
     "testFiles": [
         "test.ts"
