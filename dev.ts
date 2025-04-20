@@ -1,4 +1,5 @@
 // 在此处添加您的代码
+//% icon="\uf04a"
 namespace mydev{
     /**
      * Create a 5x8 pixel matrix for use as a custom character.
