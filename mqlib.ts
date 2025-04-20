@@ -86,7 +86,7 @@ namespace mqlib {
     //% blockHidden=true
     //% value.fieldEditor="colornumber" value.fieldOptions.decompileLiterals=true
     //% value.defl='0xff0000'
-    //% value.fieldOptions.colours='["#ff0000","#00ff00","#0000ff","#ffff00"]'
+    //% value.fieldOptions.colours='["0xff0000","0x00ff00","0x0000ff","0xffff00"]'
     //% value.fieldOptions.columns=4
     export function __colorNumberPickerRgby(value: number) {
         return value;
