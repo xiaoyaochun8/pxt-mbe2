@@ -2,22 +2,35 @@
 //% icon="\uf04a"
 namespace mydev{
     /**
-     * Create a 5x8 pixel matrix for use as a custom character.
+     * Create a 19x19 pixel matrix for use as a custom character.
      */
     //% subcategory="oled"
-    //% block="character"
+    //% block="character19"
     //% imageLiteral=1
     //% imageLiteralColumns=19
     //% imageLiteralRows=19
     //% imageLiteralScale=0.001
     //% shim=images::createImage
-    //% weight=59
     export function oledCharacterPixels(i: string): Image {
         return <Image><any>i;
     }
 
     /**
-     * Create a 5x8 pixel matrix for use as a custom character.
+     * Create a 16x16 pixel matrix for use as a custom character.
+     */
+    //% subcategory="oled"
+    //% block="character16"
+    //% imageLiteral=1
+    //% imageLiteralColumns=16
+    //% imageLiteralRows=16
+    //% imageLiteralScale=0.001
+    //% shim=images::createImage
+    export function oledCharacterPixels2(i: string): Image {
+        return <Image><any>i;
+    }
+
+    /**
+     * Create a 19x19 pixel matrix for use as a custom character.
      */
     //% subcategory="test"
     //% block
