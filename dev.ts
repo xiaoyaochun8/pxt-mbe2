@@ -52,6 +52,7 @@ namespace mydev{
             for (let x = 0; x < 128; x++) {
                 if (im.pixel(x, y)) {
                     serial.writeLine(x.toString()+'-'+y.toString())
+                    //todo call < OLED12864_I2C.pixel(x, y, color) >
                 }
             }
         }
