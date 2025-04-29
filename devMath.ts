@@ -15,14 +15,14 @@ namespace devMath {
     export function testCalc1(v: number): void {
         basic.showString("1")
     }
-	
-	//% block='1 + 3 = ? $v'
+
+    //% block='1 + 3 = ? $v'
     //% v.min=0 v.max=10 v.defl=0
     export function testCalc2(v: number): void {
         basic.showString("2")
     }
 
-	//% block='1 + 4 = ? $v'
+    //% block='1 + 4 = ? $v'
     //% v.min=0 v.max=10 v.defl=0
     export function testCalc3(v: number): void {
         basic.showString("3")
