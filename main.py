@@ -15,8 +15,21 @@ mbe blocks
 
 """
 # % weight=100 color=#0fbc11 icon=""
+# % groups=['servo','testInput','others']
 @namespace
 class mbe2:
+    """
+    
+    270度舵机角度
+    @param value describe value here, eg: 5
+    
+    """
+    # % block='270度：设置舵机角度 $v'
+    # % group='servo'
+    # % block.loc.cn='270度舵机 $v'
+    # % v.min=0 v.max=270 v.defl=0
+    def arc270(v: number):
+        return Math.map(v, 0, 270, 0, 180)
     """
     
     TODO: describe your function here
@@ -26,6 +39,7 @@ class mbe2:
     
     """
     # % block
+    # % group='others'
     def foo(n: number, s: str, e: MyEnum):
         # Add code here
         basic.show_string("Hello mbe!")
@@ -36,5 +50,6 @@ class mbe2:
     
     """
     # % block
+    # % group='others'
     def fib(value: number):
         return value if value <= 1 else fib(value - 1) + fib(value - 2)
