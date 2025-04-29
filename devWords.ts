@@ -9,17 +9,13 @@
  */
 
 namespace devWords {
-
-    //% block='我'
-    export function testWord1(): void {
-    }
-
-    //% block='是'
-    export function testWord2(): void {
-    }
-
     //% block='谁'
     export function testWord3(): void {
     }
-
+    //% block='是'
+    export function testWord2(): void {
+    }
+    //% block='我'
+    export function testWord1(): void {
+    }
 }
