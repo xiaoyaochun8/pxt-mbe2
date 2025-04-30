@@ -6,6 +6,7 @@
 
 /**
  * devWords blocks
+ * -可动态生成
  */
 
 namespace devWords {
