@@ -2,6 +2,8 @@
 /**
 * 使用此文件来定义自定义函数和图形块。
 * 想了解更详细的信息，请前往 https://makecode.microbit.org/blocks/custom
+* https://makecode.com/defining-blocks
+* https://makecode.com/playground#basic-groups
 */
 
 enum MyEnum {

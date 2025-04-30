@@ -9,22 +9,23 @@
  */
 
 namespace devMath {
-
-    //% block='1 + 2 = ? $v'
-    //% v.min=0 v.max=10 v.defl=0
-    export function testCalc1(v: number): void {
-        basic.showString("1")
+	//% block="检查结果"
+    export function checkRet(v:number) {
+        basic.showIcon(IconNames.Yes)
+        // basic.showIcon(IconNames.No)
     }
-
-    //% block='1 + 3 = ? $v'
-    //% v.min=0 v.max=10 v.defl=0
-    export function testCalc2(v: number): void {
-        basic.showString("2")
+    //% block="a - b = ? $v"
+    export function setA_Sub_B(v:number) {
     }
-
-    //% block='1 + 4 = ? $v'
-    //% v.min=0 v.max=10 v.defl=0
-    export function testCalc3(v: number): void {
-        basic.showString("3")
+    //% block="a + b = ? $v"
+    export function setA_Plus_B(v:number) {
+    }
+    //% block="b = $v"
+    //% v.defl=2
+    export function setB(v:number) {
+    }
+    //% block="a = $v"
+    //% v.defl=1
+    export function setA(v:number) {
     }
 }
