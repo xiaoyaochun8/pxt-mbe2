@@ -9,7 +9,7 @@
  */
 
 namespace devMath {
-	//% block="检查结果"
+    //% block="检查结果"
     export function checkRet(v:number) {
         basic.showIcon(IconNames.Yes)
         // basic.showIcon(IconNames.No)

@@ -10,6 +10,10 @@
  */
 
 namespace devWords {
+    //% block
+    //% s.defl="我"
+    export function randomWords(s: string) {
+    }
     //% block='谁'
     export function testWord3(): void {
     }
