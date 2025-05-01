@@ -14,37 +14,7 @@ namespace mydev{
     export function oledCharacterPixels12864(i: string): Image {
         return <Image><any>i;
     }
-    /**
-     * Create a 19x19 pixel matrix for use as a custom character.
-     */
-    //% subcategory="oled"
-    //% block="character19x19"
-    //% imageLiteral=1
-    //% imageLiteralColumns=19
-    //% imageLiteralRows=19
-    //% imageLiteralScale=0.001
-    //% shim=images::createImage
-    export function oledCharacterPixels1919(i: string): Image {
-        return <Image><any>i;
-    }
 
-    /**
-     * Create a 16x16 pixel matrix for use as a custom character.
-     */
-    //% subcategory="oled"
-    //% block="character16x16"
-    //% imageLiteral=1
-    //% imageLiteralColumns=16
-    //% imageLiteralRows=16
-    //% imageLiteralScale=0.001
-    //% shim=images::createImage
-    export function oledCharacterPixels1616(i: string): Image {
-        return <Image><any>i;
-    }
-
-    /**
-     * Create a 19x19 pixel matrix for use as a custom character.
-     */
     //% subcategory="test"
     //% block
     export function getImgPixels(im: Image): void {

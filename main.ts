@@ -21,18 +21,6 @@ enum MyEnum {
 namespace mbe2 {
 
     /**
-     * 270度舵机角度
-     * @param value describe value here, eg: 5
-     */
-    //% block='270度：设置舵机角度 $v'
-    //% group='servo'
-    //% block.loc.cn='270度舵机 $v'
-    //% v.min=0 v.max=270 v.defl=0
-    export function arc270(v: number): number {
-        return Math.map(v, 0, 270, 0, 180);
-    }
-    
-    /**
      * TODO: describe your function here
      * @param n describe parameter here, eg: 5
      * @param s describe parameter here, eg: "Hello"
@@ -41,14 +29,15 @@ namespace mbe2 {
     //% block
     //% group='others'
     export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
-        basic.showString("Hello mbe!")
     }
 
-    /**
-     * TODO: describe your function here
-     * @param value describe value here, eg: 5
-     */
+    //% block
+    //% group='others'
+    //% advanced=true
+    export function foo2(n: number, s: string, e: MyEnum): void {
+    }
+
+
     //% block
     //% group='others'
     export function fib(value: number): number {
