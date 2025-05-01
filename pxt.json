@@ -17,7 +17,6 @@
         "devMore.ts",
         "devToggle.ts",
         "devVarType.ts",
-        "devMath.ts",
         "devWords.ts"
     ],
     "testFiles": [
