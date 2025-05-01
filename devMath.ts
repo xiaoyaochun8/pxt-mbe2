@@ -9,23 +9,39 @@
  */
 
 namespace devMath {
-    //% block="检查结果"
+    let _a = 0;
+    let _b = 0;
+    let _symbol = '';
+
+    //% block="我的计算结果是？$v"
     export function checkRet(v:number) {
-        basic.showIcon(IconNames.Yes)
-        // basic.showIcon(IconNames.No)
+        if(_symbol == 'p' && v == _a + _b){
+            basic.showIcon(IconNames.Yes);
+            music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone);
+        } else if (_symbol == 's' && v == _a - _b){
+            basic.showIcon(IconNames.Yes);
+            music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone);
+        }else{
+            basic.showIcon(IconNames.No);
+            music.play(music.builtinPlayableSoundEffect(soundExpression.sad), music.PlaybackMode.UntilDone);
+        }
     }
-    //% block="a - b = ? $v"
-    export function setA_Sub_B(v:number) {
+    //% block="a - b = ?"
+    export function setA_Sub_B() {
+        _symbol = 's';
     }
-    //% block="a + b = ? $v"
-    export function setA_Plus_B(v:number) {
+    //% block="a + b = ?"
+    export function setA_Plus_B() {
+        _symbol = 'p';
     }
     //% block="b = $v"
     //% v.defl=2
     export function setB(v:number) {
+        _b = v;
     }
     //% block="a = $v"
     //% v.defl=1
     export function setA(v:number) {
+        _a = v;
     }
 }
