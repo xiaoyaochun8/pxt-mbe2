@@ -22,7 +22,6 @@ namespace mydev{
         for (let y = 0; y < 64; y++) {
             for (let x = 0; x < 32; x++) {
                 if (im.pixel(x, y)) {
-                    serial.writeLine(x.toString()+'-'+y.toString())
                     OLED12864_I2C.pixel(x, y, 1)
                 }
             }
