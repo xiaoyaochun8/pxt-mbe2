@@ -9,7 +9,7 @@ namespace mydev{
     //% imageLiteral=1
     //% imageLiteralColumns=64
     //% imageLiteralRows=64
-    //% imageLiteralScale=0.001
+    //% imageLiteralScale=1
     //% shim=images::createImage
     export function oledCharacterPixels12864(i: string): Image {
         return <Image><any>i;
