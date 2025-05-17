@@ -8,7 +8,7 @@ namespace mydev{
     //% block="character128x64"
     //% imageLiteral=1
     //% imageLiteralColumns=64
-    //% imageLiteralRows=64
+    //% imageLiteralRows=32
     //% imageLiteralScale=1
     //% shim=images::createImage
     export function oledCharacterPixels12864(i: string): Image {
@@ -20,7 +20,7 @@ namespace mydev{
     export function drawImgByPixels(im: Image): void {
         OLED12864_I2C.init(60)
         for (let y = 0; y < 64; y++) {
-            for (let x = 0; x < 64; x++) {
+            for (let x = 0; x < 32; x++) {
                 if (im.pixel(x, y)) {
                     serial.writeLine(x.toString()+'-'+y.toString())
                     OLED12864_I2C.pixel(x, y, 1)
