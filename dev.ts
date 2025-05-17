@@ -19,8 +19,8 @@ namespace mydev{
     //% block
     export function drawImgByPixels(im: Image): void {
         OLED12864_I2C.init(60)
-        for (let y = 0; y < 64; y++) {
-            for (let x = 0; x < 32; x++) {
+        for (let y = 0; y < 32; y++) {
+            for (let x = 0; x < 64; x++) {
                 if (im.pixel(x, y)) {
                     OLED12864_I2C.pixel(x, y, 1)
                 }
