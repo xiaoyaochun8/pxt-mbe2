@@ -18,7 +18,7 @@ enum OledFace{
 namespace mydev{
     //% subcategory="oled"
     //% group='oled-形状'
-    //% block
+    //% block="oled画正方形 $iSize"
     //% iSize.min=1 iSize.max=3 iSize.defl=1
     export function oledDrawSquare(iSize: Number): void {
         OLED12864_I2C.init(60);
@@ -32,7 +32,7 @@ namespace mydev{
     }
     //% subcategory="oled"
     //% group='oled-形状'
-    //% block
+    //% block="oled画长方形 $iSize"
     //% iSize.min=1 iSize.max=3 iSize.defl=1
     export function oledDrawRectangle(iSize: Number): void {
         OLED12864_I2C.init(60);
@@ -46,7 +46,7 @@ namespace mydev{
     }
     //% subcategory="oled"
     //% group='oled-表情'
-    //% block
+    //% block="oled画表情 $iSize"
     //% gesture.fieldEditor="gridpicker"
     //% gesture.fieldOptions.width=220
     //% gesture.fieldOptions.columns=3
