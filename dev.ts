@@ -1,17 +1,23 @@
 // 在此处添加您的代码
 enum OledFace{
-    //% block="^_^"
+    //% block="开心"
     Happy,
-    //% block="^.^"
+    //% block="伤心"
     Sad,
+    //% block="生气"
+    Angry,
+    //% block="惊讶"
+    Amazed,
+    //% block="睡觉"
+    Sleep,
 }
 
 
 //% icon="\uf04a"
-//% groups=['oled-shape','oled-face','oled-paint']
+//% groups=['oled-形状','oled-表情','oled-画图']
 namespace mydev{
     //% subcategory="oled"
-    //% group='oled-shape'
+    //% group='oled-形状'
     //% block
     //% iSize.min=1 iSize.max=3 iSize.defl=1
     export function oledDrawSquare(iSize: Number): void {
@@ -25,7 +31,7 @@ namespace mydev{
         }
     }
     //% subcategory="oled"
-    //% group='oled-shape'
+    //% group='oled-形状'
     //% block
     //% iSize.min=1 iSize.max=3 iSize.defl=1
     export function oledDrawRectangle(iSize: Number): void {
@@ -39,7 +45,7 @@ namespace mydev{
         }
     }
     //% subcategory="oled"
-    //% group='oled-face'
+    //% group='oled-表情'
     //% block
     //% gesture.fieldEditor="gridpicker"
     //% gesture.fieldOptions.width=220
