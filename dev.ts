@@ -1,5 +1,5 @@
 // 在此处添加您的代码
-enum OledFace{
+enum OledFace {
     //% block="开心"
     Happy,
     //% block="伤心"
@@ -11,7 +11,6 @@ enum OledFace{
     //% block="睡觉"
     Sleep,
 }
-
 
 //% icon="\uf04a"
 //% groups=['oled-形状','oled-表情','oled-画图']
@@ -52,5 +51,16 @@ namespace mydev{
     //% gesture.fieldOptions.columns=3
     export function oledDrawFace(oledFace: OledFace): void {
         OLED12864_I2C.init(60);
+        //let im:Image = {};
+        if(oledFace == OledFace.Happy){
+            //im = '';
+        }
+        for (let y = 0; y < 32; y++) {
+            for (let x = 0; x < 64; x++) {
+                //if (im.pixel(x, y)) {
+                    OLED12864_I2C.pixel(x, y, 1)
+                //}
+            }
+        }
     }
 }
