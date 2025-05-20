@@ -45,13 +45,17 @@ namespace mydev{
     }
     //% subcategory="oled"
     //% group='oled-表情'
-    //% block="oled画表情 $iSize"
+    //% block="oled画表情 $oledFace"
     //% gesture.fieldEditor="gridpicker"
     //% gesture.fieldOptions.width=220
     //% gesture.fieldOptions.columns=3
     export function oledDrawFace(oledFace: OledFace): void {
         OLED12864_I2C.init(60);
-        //let im:Image = {};
+        let im = `
+# · ·
+# · ·
+# · ·
+        `;
         if(oledFace == OledFace.Happy){
             //im = '';
         }
