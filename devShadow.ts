@@ -56,8 +56,7 @@ namespace devShadow{
     }
 
     /**
-     * color
-     * @param color describe parameter here
+     * wordPicker
      */
     //% shim=TD_ID
     //% blockId=wordPicker
@@ -73,5 +72,24 @@ namespace devShadow{
     //% block="wordPicker $word"
     //% word.shadow="wordPicker"
     export function testdropdown(word: string) {
+    }
+    /**
+     * To create a dropdown for number values, use numberdropdown instead
+     * of textdropdown for the fieldEditor.
+     */
+    //% shim=TD_ID
+    //% blockId=numberPicker
+    //% block="$value"
+    //% blockHidden=true
+    //% value.fieldEditor="numberdropdown"
+    //% value.fieldOptions.decompileLiterals=true
+    //% value.fieldOptions.values='1,2,23.5,5'
+    //% value.defl='5'
+    export function __numberPicker(value: number): number {
+        return value;
+    }
+    //% block="show numberdropdown $value"
+    //% value.shadow="numberPicker"
+    export function testdropdownNumber(value: number) {
     }
 }
