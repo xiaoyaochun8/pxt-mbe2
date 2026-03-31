@@ -17,8 +17,14 @@ enum MyEnum {
  * mbe blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-//% groups=['servo','testInput','others']
+//% groups=['testInput','others']
 namespace mbe2 {
+
+    //% block
+    //% group='testInput'
+    export function fib(value: number): number {
+        return value <= 1 ? value : fib(value - 1) + fib(value - 2);
+    }
 
     /**
      * TODO: describe your function here
@@ -37,11 +43,9 @@ namespace mbe2 {
     export function foo2(n: number, s: string, e: MyEnum): void {
     }
 
-
-    //% block
-    //% group='others'
-    export function fib(value: number): number {
-        return value <= 1 ? value : fib(value - 1) + fib(value - 2);
+    //% subcategory="数学"
+    //% block="setA_Sub_B"
+    export function setA_Sub_B() {
     }
 
 }
