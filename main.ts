@@ -45,7 +45,7 @@ namespace mbe2 {
 
     //% subcategory="数学"
     //% block="setA_Sub_B"
-    export function setA_Sub_B() {
+    export function setA_Sub_B(): void {
     }
 
 }
