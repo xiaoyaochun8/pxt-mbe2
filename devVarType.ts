@@ -13,6 +13,7 @@ namespace devVarType {
     export function devString(s: string) {
     }
     //% block
+    // n.defl = 3
     export function devNumber(n: number) {
     }
 }
