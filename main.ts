@@ -20,7 +20,7 @@ enum MyEnum {
 //% groups=['testInput','others']
 namespace mbe2 {
 
-    //% block
+    //% block="斐波那契数列 $value"
     //% group='testInput'
     export function fib(value: number): number {
         return value <= 1 ? value : fib(value - 1) + fib(value - 2);

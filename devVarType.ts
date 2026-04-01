@@ -10,10 +10,11 @@ namespace devVarType {
     export function devArray(ary: string[]) {
     }
     //% block
+    //% s.defl="hi!"
     export function devString(s: string) {
     }
     //% block
-    // n.defl = 3
+    //% n.defl=3
     export function devNumber(n: number) {
     }
 }
