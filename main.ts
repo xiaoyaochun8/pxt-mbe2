@@ -12,6 +12,12 @@ enum MyEnum {
     //% block="two"
     Two
 }
+enum MyDelimiters {
+    //% block="new line"
+    NewLine = 1,
+    //% block=","
+    Comma = 2
+}
 
 /**
  * mbe blocks
