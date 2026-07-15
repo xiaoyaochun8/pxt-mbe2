@@ -4,9 +4,9 @@
 namespace mydev{
 
     export enum MyDropList1 {
-        //% block="d1"
+        //% block="你"
         d1 = 1,
-        //% block="d2"
+        //% block="好"
         d2 = 2
     }
     //% block
@@ -18,7 +18,7 @@ namespace mydev{
     //% blockHidden=true
     //% value.fieldEditor="numberdropdown"
     //% value.fieldOptions.decompileLiterals=true
-    //% value.fieldOptions.data='[["a",1],["b",2]]'
+    //% value.fieldOptions.data='[["你",1],["好",2]]'
     export function __numberPicker2(value: number): number {
         return value;
     }
