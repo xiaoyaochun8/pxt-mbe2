@@ -12,6 +12,7 @@ namespace mydev{
     //% block
     export function dropList1(e: MyDropList1): void {
         serial.writeLine("" + e)
+        basic.showNumber(e)
     }
     
     //% blockId=numberPicker2
