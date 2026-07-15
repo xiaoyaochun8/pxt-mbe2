@@ -3,7 +3,7 @@
 //% icon="\uf04a"
 namespace mydev{
 
-    enum MyDropList1 {
+    export enum MyDropList1 {
         //% block="d1"
         d1 = 1,
         //% block="d2"
